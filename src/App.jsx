@@ -4,15 +4,13 @@ import { useState } from "react";
 import MainContainer from "./components/MainContainer";
 
 function App() {
-  const [coins, setCoins] = useState(0);
   const [isActive, setIsActive] = useState({
     available: true,
     status: "active",
   });
-  const handleFreeCreditBtn = (freeCoins) => {
-    // console.log(freeCoins);
-    setCoins(coins + freeCoins);
-  };
+  const [coins, setCoins] = useState(0);
+  const [chosenPlayers, setChosenPlayers] = useState([]);
+
   const handleActiveBtn = (status) => {
     // console.log(status);
     if (status === "available-btn") {
@@ -28,12 +26,35 @@ function App() {
     }
   };
   // console.log(isActive);
+  const handleFreeCreditBtn = (freeCoins) => {
+    // console.log(freeCoins);
+    setCoins(coins + freeCoins);
+  };
+
+  const handleChoosePlayerBtn = (element) => {
+    // console.log(element);
+    let isExist = chosenPlayers.find(
+      (existElement) => existElement.id === element.id
+    );
+    // console.log(isExist);
+    let hasCoins = coins < element.price;
+    // console.log(hasCoins);
+    if (isExist || hasCoins) {
+      alert("not enough coins or already added");
+    } else {
+      const newChosenPlayers = [...chosenPlayers, element];
+      setChosenPlayers(newChosenPlayers);
+      setCoins(coins - element.price);
+    }
+  };
   return (
     <div>
       <div className="w-11/12 mx-auto">
         <Header coins={coins}></Header>
         <Banner handleFreeCreditBtn={handleFreeCreditBtn}></Banner>
         <MainContainer
+          chosenPlayers={chosenPlayers}
+          handleChoosePlayerBtn={handleChoosePlayerBtn}
           isActive={isActive}
           handleActiveBtn={handleActiveBtn}
         ></MainContainer>
