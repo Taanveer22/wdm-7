@@ -1,6 +1,6 @@
 import bannermain from "../assets/banner-main.png";
 import bgshadow from "../assets/bg-shadow.png";
-const Banner = () => {
+const Banner = ({ handleFreeCreditBtn }) => {
   return (
     <div
       style={{
@@ -20,7 +20,12 @@ const Banner = () => {
         Beyond Boundaries Beyond Limits
       </p>
       <div className=" flex justify-center items-center">
-        <button className="text-base font-bold btn ">Claim Free Credit</button>
+        <button
+          onClick={() => handleFreeCreditBtn(1111111111)}
+          className="text-base font-bold btn "
+        >
+          Claim Free Credit
+        </button>
       </div>
     </div>
   );
