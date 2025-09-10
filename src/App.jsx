@@ -1,8 +1,12 @@
+import Header from "./components/Header";
+
 function App() {
   return (
-    <>
-      <h1 className="btn btn-success text-5xl font-bold ">Vite + React</h1>
-    </>
+    <div>
+      <div className="w-11/12 mx-auto">
+        <Header></Header>
+      </div>
+    </div>
   );
 }
 
