@@ -1,0 +1,62 @@
+[
+  {
+    "id": 1,
+    "image": "https://i.postimg.cc/P5xC7rrX/mashrafe.jpg",
+    "name": "Mashrafe Mortaza",
+    "country": "Bangladesh",
+    "role": "Bowler",
+    "battingHand": "Right-hand bat",
+    "bowlingHand": "Right-arm fast",
+    "price": "$900,000"
+  },
+  {
+    "id": 2,
+    "image": "https://i.postimg.cc/3xRZZTsp/kohli.jpg",
+    "name": "Virat Kohli",
+    "country": "India",
+    "role": "Batsman",
+    "battingHand": "Right-hand bat",
+    "bowlingHand": "Right-arm spin",
+    "price": "$1,500,000"
+  },
+  {
+    "id": 3,
+    "image": "https://i.postimg.cc/t4snvC23/shakib.jpg",
+    "name": "Shakib Al Hasan",
+    "country": "Bangladesh",
+    "role": "All-rounder",
+    "battingHand": "Left-hand bat",
+    "bowlingHand": "Left-arm orthodox",
+    "price": "$950,000"
+  },
+  {
+    "id": 4,
+    "image": "https://i.postimg.cc/t70NRZSH/smith.jpg",
+    "name": "Steve Smith",
+    "country": "Australia",
+    "role": "Batsman",
+    "battingHand": "Right-hand bat",
+    "bowlingHand": "Right-arm legbreak",
+    "price": "$1,400,000"
+  },
+  {
+    "id": 5,
+    "image": "https://i.postimg.cc/1t2pMVZN/babar.jpg",
+    "name": "Babar Azam",
+    "country": "Pakistan",
+    "role": "Batsman",
+    "battingHand": "Right-hand bat",
+    "bowlingHand": "Right-arm offbreak",
+    "price": "$1,300,000"
+  },
+  {
+    "id": 6,
+    "image": "https://i.postimg.cc/gjHf3WfQ/gayle.jpg",
+    "name": "Chris Gayle",
+    "country": "West Indies",
+    "role": "All-rounder",
+    "battingHand": "Left-hand bat",
+    "bowlingHand": "Right-arm offbreak",
+    "price": "$900,000"
+  }
+]

@@ -33,7 +33,10 @@ function App() {
       <div className="w-11/12 mx-auto">
         <Header coins={coins}></Header>
         <Banner handleFreeCreditBtn={handleFreeCreditBtn}></Banner>
-        <MainContainer isActive={isActive} handleActiveBtn={handleActiveBtn}></MainContainer>
+        <MainContainer
+          isActive={isActive}
+          handleActiveBtn={handleActiveBtn}
+        ></MainContainer>
       </div>
     </div>
   );
