@@ -12,9 +12,10 @@ const SelectedPlayers = ({ chosenPlayers }) => {
         >
           <div className="flex gap-5 items-center">
             <img className="w-20 h-20 rounded-md" src={item.image} />
-            <div className="flex flex-col gap-2">
+            <div className="flex flex-col gap-1">
               <h1>{item.name}</h1>
               <p>{item.role}</p>
+              <p>$ {item.price}</p>
             </div>
           </div>
           <button>

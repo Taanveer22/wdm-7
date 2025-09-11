@@ -2,6 +2,7 @@ import Banner from "./components/Banner";
 import Header from "./components/Header";
 import { useState } from "react";
 import MainContainer from "./components/MainContainer";
+import NewsLetter from "./components/NewsLetter";
 
 function App() {
   const [isActive, setIsActive] = useState({
@@ -58,6 +59,7 @@ function App() {
           isActive={isActive}
           handleActiveBtn={handleActiveBtn}
         ></MainContainer>
+        <NewsLetter></NewsLetter>
       </div>
     </div>
   );
