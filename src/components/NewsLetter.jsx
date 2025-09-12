@@ -1,6 +1,6 @@
 const NewsLetter = () => {
   return (
-    <div className="space-y-4 px-40 py-20 rounded-3xl bg-linear-to-r from-cyan-100 to-yellow-100 mb-6">
+    <div className="space-y-4 py-22 rounded-3xl bg-linear-to-r from-cyan-100 to-yellow-100 mb-6">
       <h1 className="text-3xl font-bold text-center">
         Subscribe to our Newsletter
       </h1>

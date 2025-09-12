@@ -1,8 +1,9 @@
+import { useState } from "react";
 import Banner from "./components/Banner";
 import Header from "./components/Header";
-import { useState } from "react";
 import MainContainer from "./components/MainContainer";
 import NewsLetter from "./components/NewsLetter";
+import Footer from "./components/Footer";
 
 function App() {
   const [isActive, setIsActive] = useState({
@@ -61,6 +62,7 @@ function App() {
         ></MainContainer>
         <NewsLetter></NewsLetter>
       </div>
+      <Footer></Footer>
     </div>
   );
 }

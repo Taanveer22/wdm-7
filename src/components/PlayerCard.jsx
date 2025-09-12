@@ -1,5 +1,6 @@
 import { FaUserCircle } from "react-icons/fa";
 import { FaFlag } from "react-icons/fa6";
+
 const PlayerCard = ({ element, handleChoosePlayerBtn }) => {
   const { image, name, country, role, battingHand, bowlingHand, price } =
     element;

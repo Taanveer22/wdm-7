@@ -1,8 +1,9 @@
 import { RiDeleteBinLine } from "react-icons/ri";
+
 const SelectedPlayers = ({ chosenPlayers }) => {
   return (
     <div className="mb-6">
-      <h1 className="text-2xl font-bold mb-5">
+      <h1 className="text-2xl font-bold mb-5 mt-5">
         Selected Players ({chosenPlayers.length} / 6)
       </h1>
       {chosenPlayers.map((item) => (

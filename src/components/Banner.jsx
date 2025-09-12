@@ -9,7 +9,7 @@ const Banner = ({ handleFreeCreditBtn }) => {
         backgroundSize: "cover",
         backgroundPosition: "center",
       }}
-      className="bg-gray-950 p-16 space-y-4 rounded-3xl mb-6"
+      className="bg-gray-950 py-16 space-y-4 rounded-3xl mb-6"
     >
       <div className="flex justify-center items-center">
         <img className="max-w-3xs" src={bannermain} alt="bannermain" />
