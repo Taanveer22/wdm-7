@@ -1,10 +1,10 @@
 import { useState } from "react";
+import { ToastContainer, toast } from "react-toastify";
 import Banner from "./components/Banner";
 import Header from "./components/Header";
 import MainContainer from "./components/MainContainer";
 import NewsLetter from "./components/NewsLetter";
 import Footer from "./components/Footer";
-import { ToastContainer, toast } from "react-toastify";
 
 function App() {
   const [isActive, setIsActive] = useState({
@@ -48,7 +48,7 @@ function App() {
       if (hasCoins) {
         toast.error("not enough coins");
       } else if (isExist) {
-        toast.warning("player already added");
+        toast.warning("player already selected");
       } else if (maxPlayers) {
         toast.info("max player reached");
       }
@@ -60,12 +60,20 @@ function App() {
     }
   };
 
+  const handleDeletePlayerBtn = (item) => {
+    const remainingPlayers = chosenPlayers.filter(
+      (player) => player.id !== item.id
+    );
+    setChosenPlayers(remainingPlayers);
+  };
+
   return (
     <div>
       <div className="w-11/12 mx-auto">
         <Header coins={coins}></Header>
         <Banner handleFreeCreditBtn={handleFreeCreditBtn}></Banner>
         <MainContainer
+          handleDeletePlayerBtn={handleDeletePlayerBtn}
           chosenPlayers={chosenPlayers}
           handleChoosePlayerBtn={handleChoosePlayerBtn}
           isActive={isActive}

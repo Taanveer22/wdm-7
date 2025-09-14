@@ -2,6 +2,7 @@ import AvailablePlayers from "./AvailablePlayers";
 import SelectedPlayers from "./SelectedPlayers";
 
 const MainContainer = ({
+  handleDeletePlayerBtn,
   handleActiveBtn,
   isActive,
   handleChoosePlayerBtn,
@@ -30,7 +31,10 @@ const MainContainer = ({
             handleChoosePlayerBtn={handleChoosePlayerBtn}
           ></AvailablePlayers>
         ) : (
-          <SelectedPlayers chosenPlayers={chosenPlayers}></SelectedPlayers>
+          <SelectedPlayers
+            handleDeletePlayerBtn={handleDeletePlayerBtn}
+            chosenPlayers={chosenPlayers}
+          ></SelectedPlayers>
         )}
       </div>
     </div>

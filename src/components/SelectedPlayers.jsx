@@ -1,6 +1,6 @@
 import { RiDeleteBinLine } from "react-icons/ri";
 
-const SelectedPlayers = ({ chosenPlayers }) => {
+const SelectedPlayers = ({ chosenPlayers, handleDeletePlayerBtn }) => {
   return (
     <div className="mb-6">
       <h1 className="text-2xl font-bold mb-5 mt-5">
@@ -19,7 +19,7 @@ const SelectedPlayers = ({ chosenPlayers }) => {
               <p>$ {item.price}</p>
             </div>
           </div>
-          <button>
+          <button onClick={() => handleDeletePlayerBtn(item)}>
             <RiDeleteBinLine className="text-2xl font-bold text-red-500"></RiDeleteBinLine>
           </button>
         </div>
