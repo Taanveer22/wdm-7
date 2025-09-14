@@ -65,6 +65,8 @@ function App() {
       (player) => player.id !== item.id
     );
     setChosenPlayers(remainingPlayers);
+    setCoins(coins + item.price);
+    toast.warning("finally player removed");
   };
 
   return (
