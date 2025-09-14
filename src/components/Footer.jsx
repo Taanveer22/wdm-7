@@ -1,7 +1,7 @@
 import logofooter from "../assets/logo-footer.png";
 const Footer = () => {
   return (
-    <div className="pt-40 bg-indigo-950 text-white">
+    <div className="pt-60 bg-indigo-950 text-white">
       <div className="mb-16">
         <img className="max-w-36 mx-auto" src={logofooter} alt="lf" />
       </div>

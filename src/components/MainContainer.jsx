@@ -8,7 +8,7 @@ const MainContainer = ({
   chosenPlayers,
 }) => {
   return (
-    <div>
+    <div className="">
       <div className="flex justify-end gap-5 text-base font-bold">
         <button
           onClick={() => handleActiveBtn("available-btn")}
