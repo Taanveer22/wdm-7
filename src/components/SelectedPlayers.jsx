@@ -1,6 +1,16 @@
 import { RiDeleteBinLine } from "react-icons/ri";
+import { useState } from "react";
+import AvailablePlayers from "./AvailablePlayers";
 
-const SelectedPlayers = ({ chosenPlayers, handleDeletePlayerBtn }) => {
+const SelectedPlayers = ({
+  chosenPlayers,
+  handleDeletePlayerBtn,
+  handleChoosePlayerBtn,
+}) => {
+  const [displayComponent, setDisplayComponent] = useState("");
+  const handleAddMorePlayersBtn = () => {
+    setDisplayComponent("add-more-btn");
+  };
   return (
     <div className="mb-6">
       <h1 className="text-2xl font-bold mb-5 mt-5">
@@ -24,6 +34,14 @@ const SelectedPlayers = ({ chosenPlayers, handleDeletePlayerBtn }) => {
           </button>
         </div>
       ))}
+      <button onClick={handleAddMorePlayersBtn} className="btn btn-warning">
+        Add More Players
+      </button>
+      {displayComponent === "add-more-btn" && (
+        <AvailablePlayers
+          handleChoosePlayerBtn={handleChoosePlayerBtn}
+        ></AvailablePlayers>
+      )}
     </div>
   );
 };

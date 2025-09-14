@@ -32,6 +32,7 @@ const MainContainer = ({
           ></AvailablePlayers>
         ) : (
           <SelectedPlayers
+            handleChoosePlayerBtn={handleChoosePlayerBtn}
             handleDeletePlayerBtn={handleDeletePlayerBtn}
             chosenPlayers={chosenPlayers}
           ></SelectedPlayers>
