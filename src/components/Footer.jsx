@@ -5,7 +5,7 @@ const Footer = () => {
       <div className="mb-16">
         <img className="max-w-36 mx-auto" src={logofooter} alt="lf" />
       </div>
-      <div className="flex gap-5 flex-col lg:flex-row justify-between lg:justify-evenly items-baseline-last lg:items-start">
+      <div className="flex gap-5 flex-col lg:flex-row justify-evenly items-center lg:items-start">
         <div className="space-y-4">
           <h6 className="text-lg font-semibold">About Us</h6>
           <p className="text-base font-normal opacity-60">
