@@ -7,7 +7,7 @@
     "role": "Bowler",
     "battingHand": "Right-hand bat",
     "bowlingHand": "Right-arm fast",
-    "price": 888000
+    "price": 820000
   },
   {
     "id": 2,
@@ -17,7 +17,7 @@
     "role": "Batsman",
     "battingHand": "Right-hand bat",
     "bowlingHand": "Right-arm spin",
-    "price": 888000
+    "price": 980000
   },
   {
     "id": 3,
@@ -27,7 +27,7 @@
     "role": "All-rounder",
     "battingHand": "Left-hand bat",
     "bowlingHand": "Left-arm orthodox",
-    "price": 999000
+    "price": 920000
   },
   {
     "id": 4,
@@ -37,18 +37,19 @@
     "role": "Batsman",
     "battingHand": "Right-hand bat",
     "bowlingHand": "Right-arm legbreak",
-    "price": 555000
+    "price": 550000
   },
   {
     "id": 5,
-    "image": "https://i.postimg.cc/1t2pMVZN/babar.jpg",
-    "name": "Babar Azam",
-    "country": "Pakistan",
-    "role": "Batsman",
+    "image": "https://i.postimg.cc/MKrqQYFK/mushfiq.jpg",
+    "name": "Mushfiqur Rahim",
+    "country": "Bangladesh",
+    "role": "Wicketkeeper Batsman",
     "battingHand": "Right-hand bat",
-    "bowlingHand": "Right-arm offbreak",
-    "price": 777000
+    "bowlingHand": "N/A",
+    "price": 870000
   },
+
   {
     "id": 6,
     "image": "https://i.postimg.cc/gjHf3WfQ/gayle.jpg",
@@ -57,6 +58,36 @@
     "role": "All-rounder",
     "battingHand": "Left-hand bat",
     "bowlingHand": "Right-arm offbreak",
-    "price": 666000
+    "price": 960000
+  },
+  {
+    "id": 7,
+    "image": "https://i.postimg.cc/cCx0QkW6/tamim.jpg",
+    "name": "Tamim Iqbal",
+    "country": "Bangladesh",
+    "role": "Batsman",
+    "battingHand": "Left-hand bat",
+    "bowlingHand": "Right-arm offbreak",
+    "price": 920000
+  },
+  {
+    "id": 8,
+    "image": "https://i.postimg.cc/1t2pMVZN/babar.jpg",
+    "name": "Babar Azam",
+    "country": "Pakistan",
+    "role": "Batsman",
+    "battingHand": "Right-hand bat",
+    "bowlingHand": "Right-arm offbreak",
+    "price": 770000
+  },
+  {
+    "id": 9,
+    "image": "https://i.postimg.cc/3Jw3Nq9c/riyad.jpg",
+    "name": "Mahmudullah Riyad",
+    "country": "Bangladesh",
+    "role": "All-rounder",
+    "battingHand": "Right-hand bat",
+    "bowlingHand": "Right-arm offbreak",
+    "price": 850000
   }
 ]
