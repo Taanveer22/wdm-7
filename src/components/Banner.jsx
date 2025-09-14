@@ -14,16 +14,16 @@ const Banner = ({ handleFreeCreditBtn }) => {
       <div className="flex justify-center items-center">
         <img className="max-w-3xs" src={bannermain} alt="bannermain" />
       </div>
-      <h1 className="text-4xl font-bold text-center text-white">
+      <h1 className="text-2xl lg:text-4xl font-bold text-center text-white">
         Assemble Your Ultimate Dream 11 Cricket Team
       </h1>
-      <p className="text-2xl font-medium text-center text-white">
+      <p className="text-base lg:text-2xl font-medium text-center text-white">
         Beyond Boundaries Beyond Limits
       </p>
       <div className=" flex justify-center items-center">
         <button
           onClick={() => handleFreeCreditBtn(1111111)}
-          className="text-base font-bold btn "
+          className="text-base font-bold btn btn-sm lg:btn-lg"
         >
           Claim Free Credit
         </button>

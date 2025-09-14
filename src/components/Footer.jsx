@@ -24,7 +24,7 @@ const Footer = () => {
           </ul>
         </div>
 
-        <form>
+        <div>
           <h6 className="text-lg font-semibold mb-4">Newsletter</h6>
           <fieldset className="w-80">
             <label className="text-base font-normal opacity-60">
@@ -39,7 +39,7 @@ const Footer = () => {
               <button className="btn btn-secondary join-item">Subscribe</button>
             </div>
           </fieldset>
-        </form>
+        </div>
       </div>
       <hr className="text-gray-400 mt-16"></hr>
       <div className="flex justify-center items-center py-8">
